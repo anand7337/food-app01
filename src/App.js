@@ -5,7 +5,7 @@ import Launch from './components/Launch';
 import Breakfast from './components/Breakfast';
 import Dinner from './components/Dinner';
 import Contact from './components/Contact';
-
+import Img from './components/Img';
 
 
 
@@ -20,7 +20,7 @@ function App() {
    <Route path="/Launch" component={Launch}/>
    <Route path="/Dinner" component={Dinner}/> 
    <Route path="/Contact" component={Contact}/> 
-
+   <Route path="/Img"    component={Img}/>
        </Switch>
       </Router>
     

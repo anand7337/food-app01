@@ -1,5 +1,6 @@
-import React from "react";
-import { useCart } from "react-use-cart";
+import React,{useState} from "react";
+import { CartProvider, useCart } from "react-use-cart";
+
 
 const Cart = () => {
   const {
@@ -14,12 +15,45 @@ const Cart = () => {
     removeItem,
     emptyCart
   } = useCart();
-  const buy = () => {
+ 
+  
    
+ const [amount] = useState('');
+
+ const handleSubmit = (e) =>{
+  e.preventDefault();
+  if(amount === "cartTotal"){
+    alert('please enter amount');
+  }else{
+  var options = {
+    key:"rzp_test_crnhw5UJ4dhfcC",
+    key_secret:"BlpY6JJpKtU45mZRJfWh124g",
+    amount:cartTotal*100, // Example: 2000 paise = INR 20
+    currency:"INR",
+    name:"STARTUP_PROJECTS",
+    description:"for testing purpose",
+    handler:function(response){
+      alert(response.razorpay_payment_id);
+    },
+    prefill:{
+      name:"Anand",
+      email:"yanianand571@gmail.com",
+      contact:"7338939037"
+    },
+    notes:{
+      address:"Razorpay cororate office"
+    },
+    theme:{
+      color:"#3399cc"
+    }
   };
+  var pay = new window.Razorpay(options);
+  pay.open();
+}
+ };
   if (isEmpty) return <h1 className="text-center">  </h1>;
   return (
-    <section className="container mb-5">
+    <section className="container mb-5 mt-5">
       <div className="row jistufy-content-center">
         <div className="col-12">
           <h5>
@@ -75,16 +109,18 @@ const Cart = () => {
           </table>
 
           <div className="col-auto ms-auto">
-            <h2> total price: {cartTotal} $</h2>
+            <h2 value={amount}> total price: {cartTotal} $ </h2>
           </div>
         </div>
         <div className="col-auto mb-2">
           <button onClick={() => emptyCart()} className="btn btn-danger ms-2">
             Clear Cart
           </button>
-          <button onClick={buy} className="btn btn-primary ms-2">
-            Buy Now{" "}
+          <button onClick={handleSubmit} className="btn btn-primary ms-2" >
+            Buy Now
           </button>
+    
+
         </div>
       </div>
     </section>

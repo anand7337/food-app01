@@ -13,8 +13,10 @@ const Breakfast1 = () => {
               <ItemCard
                 img={item.img}
                 price={item.price}
+                del={item.del}
                 title={item.title}
                 item={item}
+
                 key={index}
               />
             );

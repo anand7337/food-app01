@@ -20,12 +20,14 @@ import { EffectCoverflow, Pagination } from "swiper";
 import Breakfast1 from "./Breakfast1";
 import Cart from "./Cart";
 import { CartProvider } from "react-use-cart";
-
+import Img from "./Img";
+import Anand2 from './Anand2';
 
 
 const Breakfast = () => {
   return (
     <body>
+       
        <nav class="navbar navbar-expand-md px-5 py-3 nav1">
         <a class="navbar-brand" href="#">
           <img
@@ -74,10 +76,10 @@ const Breakfast = () => {
                 id="navbardrop"
                 data-toggle="dropdown"
               >
-                Order <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" width="20"/>
+                Order 
               </a>
               <div class="dropdown-menu">
-              <a class="dropdown-item" href="/Home">
+              <a class="dropdown-item" href="/">
                Home
                 </a>
                 <a class="dropdown-item" href="/Breakfast">
@@ -91,9 +93,18 @@ const Breakfast = () => {
                 </a>
               </div>
             </li>
+            
+            <li class="nav-item yani">
+              <a class="nav-link" href="/Img">
+              <img src="http://cdn.onlinewebfonts.com/svg/img_574113.png" width="30"></img>
+      
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
+
+
 
 
 
@@ -153,23 +164,22 @@ const Breakfast = () => {
   <div>
       <CartProvider>
         <Breakfast1 />
-        <Cart />
+        <Anand2/>
       </CartProvider>
     </div>
 
-
-
+      
     <section class="page-footer bg-dark">
-<div class="bg-danger">
+<div class="bg-success">
   <div class="container">
-    <div class="row py-4 d-flex align-items-center">
-<div class="col-md-12 text-center">
+    <div class="row py-2 d-flex align-items-center">
+<div class="col-md-12 text-end font-001">
   <img src="https://seeklogo.com/images/C/chiken-strong-logo-0CD23797DA-seeklogo.com.png" width="90" class="endimage"/>
-  <a href="#"><i class="fa-brands fa-facebook-f text-white mr-4"></i></a>
-  <a href="#"><i class="fa-brands fa-twitter text-white mr-4"></i></a>
-  <a href="#"><i class="fa-brands fa-google-plus-g text-white mr-4"></i></a>
-  <a href="#"><i class="fa-brands fa-linkedin-in text-white mr-4"></i></a>
-  <a href="#"><i class="fa-brands fa-instagram text-white mr-4"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-facebook-f text-white mr-4 font-00001"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-twitter text-white mr-4 font-00001"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-google-plus-g text-white mr-4 font-00001"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-linkedin-in text-white mr-4 font-00001"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-instagram text-white mr-4 font-00001"></i></a>
 </div>
     </div>
   </div>
@@ -187,7 +197,7 @@ const Breakfast = () => {
 
 
     <div class="col-md-2 mx-auto mb-4">
-      <h6 class="text-uppercase font-weight-bold text-danger mb-4 foo">Usefull Links</h6>
+      <h6 class="text-uppercase font-weight-bold text-success mb-4 foo">Usefull Links</h6>
       
       <ul class="list-unstyled">
         <li class="my-2"><a href="#">Launch</a></li>
@@ -198,7 +208,7 @@ const Breakfast = () => {
 </div>
 
 <div class="col-md-3 mx-auto mb-4">
-      <h6 class="text-uppercase font-weight-bold text-danger mb-4 foo">Contact</h6>
+      <h6 class="text-uppercase font-weight-bold text-success mb-4 foo">Contact</h6>
      
       <ul class="list-unstyled">
         <li class="my-2 text-white"><i class="fas fa-home mr-3"></i>*******,Tamilnadu</li>
@@ -211,13 +221,11 @@ const Breakfast = () => {
 
   </div>
 </div>
-<div class="footer-copyright text-center py-3 bg-black">
-  <p class="end"> &copy; Copyright <a href="#"><span class="text-danger">Foodle.com</span></a></p>
-  <p>Designed By The Mr.Developer</p>
+<div class="footer-copyright text-center py-1  bg-black">
+  <p class="end mt-3"> &copy; Copyright <a href="#"><span class="text-success">Foodle.com </span></a><br/>
+ Designed By The Mr.Developer </p>
 </div>
        </section>
-
-
 
 
        </body>

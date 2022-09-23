@@ -1,5 +1,5 @@
 import React from "react";
-import ItemCard from "./ItemCard";
+import Anand1 from "./Anand1";
 import data2 from "./data2";
 
 const Dinner1 = () => {
@@ -10,13 +10,10 @@ const Dinner1 = () => {
         <div className="row justify-content-center">
           {data2.product.map((item, index) => {
             return (
-              <ItemCard
-                img={item.img}
-                price={item.price}
-                del={item.del}
-                title={item.title}
-                item={item}
-                key={index}
+              <Anand1
+              
+              item={item}
+              key={index}
               />
             );
           })}

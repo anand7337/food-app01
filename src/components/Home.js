@@ -44,7 +44,7 @@ function Home() {
             
             <li class="nav-item">
               <a class="nav-link" href="/Breakfast">
-                Break Fast
+               Break Fast 
               </a>
             </li>
             <li class="nav-item">
@@ -58,7 +58,9 @@ function Home() {
               </a>
             </li>
             
+           
 
+            
             <li class="nav-item dropdown">
               <a
                 class="nav-link toggle"
@@ -66,10 +68,10 @@ function Home() {
                 id="navbardrop"
                 data-toggle="dropdown"
               >
-                Order <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" width="20"/>
+                Order
               </a>
               <div class="dropdown-menu">
-              <a class="dropdown-item" href="/Home">
+              <a class="dropdown-item" href="/">
                Home
                 </a>
                 <a class="dropdown-item" href="/Breakfast">
@@ -83,6 +85,12 @@ function Home() {
                 </a>
               </div>
             </li>
+
+
+           
+              
+          
+
           </ul>
         </div>
       </nav>
@@ -91,8 +99,8 @@ function Home() {
       <section id="Home1">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 mt-5 text-white front">
-              <p>
+            <div class="col-md-6  text-white front mt-5">
+              <p class="ananddd">
                 <span class="smile">&#128523; </span> EASY WAY TO ORDER YOUR
                 FOOD
               </p>
@@ -515,19 +523,19 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
        <section class="page-footer bg-dark">
-<div class="bg-danger">
+<div class="bg-success">
   <div class="container">
-    <div class="row py-4 d-flex align-items-center">
-<div class="col-md-12 text-center">
+    <div class="row py-2 d-flex align-items-center">
+<div class="col-md-12 text-end font-001">
   <img src="https://seeklogo.com/images/C/chiken-strong-logo-0CD23797DA-seeklogo.com.png" width="90" class="endimage"/>
-  <a href="#"><i class="fa-brands fa-facebook-f text-white mr-4"></i></a>
-  <a href="#"><i class="fa-brands fa-twitter text-white mr-4"></i></a>
-  <a href="#"><i class="fa-brands fa-google-plus-g text-white mr-4"></i></a>
-  <a href="#"><i class="fa-brands fa-linkedin-in text-white mr-4"></i></a>
-  <a href="#"><i class="fa-brands fa-instagram text-white mr-4"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-facebook-f text-white mr-4 font-00001"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-twitter text-white mr-4 font-00001"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-google-plus-g text-white mr-4 font-00001"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-linkedin-in text-white mr-4 font-00001"></i></a>
+  <a href="#" class="font-002"><i class="fa-brands fa-instagram text-white mr-4 font-00001"></i></a>
 </div>
     </div>
   </div>
@@ -545,7 +553,7 @@ function Home() {
 
 
     <div class="col-md-2 mx-auto mb-4">
-      <h6 class="text-uppercase font-weight-bold text-danger mb-4 foo">Usefull Links</h6>
+      <h6 class="text-uppercase font-weight-bold text-success mb-4 foo">Usefull Links</h6>
       
       <ul class="list-unstyled">
         <li class="my-2"><a href="#">Launch</a></li>
@@ -556,7 +564,7 @@ function Home() {
 </div>
 
 <div class="col-md-3 mx-auto mb-4">
-      <h6 class="text-uppercase font-weight-bold text-danger mb-4 foo">Contact</h6>
+      <h6 class="text-uppercase font-weight-bold text-success mb-4 foo">Contact</h6>
      
       <ul class="list-unstyled">
         <li class="my-2 text-white"><i class="fas fa-home mr-3"></i>*******,Tamilnadu</li>
@@ -569,9 +577,9 @@ function Home() {
 
   </div>
 </div>
-<div class="footer-copyright text-center py-3 bg-black">
-  <p class="end"> &copy; Copyright <a href="#"><span class="text-danger">Foodle.com</span></a></p>
-  <p>Designed By The Mr.Developer</p>
+<div class="footer-copyright text-center py-1  bg-black">
+  <p class="end mt-3"> &copy; Copyright <a href="#"><span class="text-success">Foodle.com </span></a><br/>
+ Designed By The Mr.Developer </p>
 </div>
        </section>
 
